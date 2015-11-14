@@ -1,9 +1,20 @@
 fileFormatVersion: 2
 guid: 132bdbb1511d2454f910efd8ffe8e51d
-timeCreated: 1447246109
+timeCreated: 1447256378
 licenseType: Pro
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: CL
+    21300002: main_menu_1
+    21300004: UD
+    21300006: main_menu_3
+    21300008: cloud1
+    21300010: cluoud2
+    21300012: cloud3
+    21300014: cloud4
+    21300016: main_menu_1
+    21300018: main_menu_2
+    21300020: main_menu_3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,7 +41,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,7 +49,7 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -49,7 +60,97 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: CL
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 4261
+        width: 893
+        height: 622
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: UD
+      rect:
+        serializedVersion: 2
+        x: 1662
+        y: 4254
+        width: 986
+        height: 612
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cloud1
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 2848
+        width: 488
+        height: 304
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cluoud2
+      rect:
+        serializedVersion: 2
+        x: 2246
+        y: 2891
+        width: 506
+        height: 314
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cloud3
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 2112
+        width: 746
+        height: 461
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cloud4
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1991
+        width: 789
+        height: 488
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: main_menu_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1364
+        width: 2908
+        height: 407
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: main_menu_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 863
+        width: 2908
+        height: 405
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: main_menu_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 396
+        width: 2908
+        height: 404
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 
