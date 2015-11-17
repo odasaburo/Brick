@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: f47d8fc8123e13b42ab28181ba5562f3
-timeCreated: 1447271268
+timeCreated: 1447640116
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
@@ -8,7 +8,7 @@ TextureImporter:
     21300002: Gameover_screen_1
     21300004: facebook
     21300006: dollarsignal
-    21300008: Gameover_screen_4
+    21300008: point
     21300010: Gameover_screen_5
     21300012: twiter
     21300014: admob
@@ -16,6 +16,8 @@ TextureImporter:
     21300018: abs
     21300020: multiply
     21300022: dot
+    21300024: facetwiter
+    21300026: AD
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -92,76 +94,6 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: twiter
-      rect:
-        serializedVersion: 2
-        x: 572
-        y: 3233
-        width: 362
-        height: 360
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: facebook
-      rect:
-        serializedVersion: 2
-        x: 939
-        y: 3231
-        width: 361
-        height: 363
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: admob
-      rect:
-        serializedVersion: 2
-        x: 645
-        y: 2600
-        width: 581
-        height: 384
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: count
-      rect:
-        serializedVersion: 2
-        x: 1708
-        y: 2612
-        width: 404
-        height: 382
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: dollarsignal
-      rect:
-        serializedVersion: 2
-        x: 654
-        y: 2021
-        width: 167
-        height: 306
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 1, y: 0, z: 0, w: 0}
-    - name: abs
-      rect:
-        serializedVersion: 2
-        x: 2424
-        y: 2039
-        width: 314
-        height: 308
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: multiply
-      rect:
-        serializedVersion: 2
-        x: 2126
-        y: 3305
-        width: 166
-        height: 184
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: dot
       rect:
         serializedVersion: 2
@@ -169,6 +101,36 @@ TextureImporter:
         y: 2059
         width: 61
         height: 69
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: facetwiter
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3149
+        width: 3124
+        height: 489
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AD
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2547
+        width: 3125
+        height: 488
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: point
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1928
+        width: 3125
+        height: 489
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}

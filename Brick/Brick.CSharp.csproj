@@ -70,9 +70,18 @@
   <ItemGroup>
     <Compile Include="Assets\script\Maincontrol.cs" />
     <Compile Include="Assets\script\ballcontrol.cs" />
+    <Compile Include="Assets\script\characterPurchaseControl.cs" />
     <Compile Include="Assets\script\cloudcontrol.cs" />
     <Compile Include="Assets\script\dialogueAnimation.cs" />
+    <Compile Include="Assets\script\gameOverDetect.cs" />
+    <Compile Include="Assets\script\levelsettime.cs" />
+    <Compile Include="Assets\script\lightingControl.cs" />
+    <Compile Include="Assets\script\mainspecialControl.cs" />
     <Compile Include="Assets\script\playerControl.cs" />
+    <Compile Include="Assets\script\setTime.cs" />
+    <Compile Include="Assets\script\specialPower.cs" />
+    <Compile Include="Assets\script\specialTrigger.cs" />
+    <Compile Include="Assets\script\specialballControl.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>
