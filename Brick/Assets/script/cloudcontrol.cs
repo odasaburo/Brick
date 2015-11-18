@@ -7,6 +7,7 @@ using System.Collections;
 public class cloudcontrol : MonoBehaviour {
     public GameObject parent;
     public GameObject gamenmanager;
+    public AudioSource audiosource;
     Animator animator;
 	// Use this for initialization
 	void Start () {
@@ -28,6 +29,7 @@ public class cloudcontrol : MonoBehaviour {
     {
         if(other.tag == "ball" || other.tag == "lighting")
         {
+            audiosource.Play();
             animator.SetTrigger("destroy");
             gamenmanager.GetComponent<Maincontrol>().game_score += 1;
             gamenmanager.GetComponent<Maincontrol>().destroy_pos = GetComponent<Transform>().position;

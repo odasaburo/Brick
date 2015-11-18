@@ -3,6 +3,8 @@ using System.Collections;
 
 public class specialTrigger : MonoBehaviour {
 
+    public AudioSource audiosource;
+    public AudioClip catchclip;
     public int state;
 	// Use this for initialization
 	void Start () {
@@ -21,7 +23,8 @@ public class specialTrigger : MonoBehaviour {
     {
         if (other.tag == "player")
         {
-           
+            //audiosource.PlayOneShot(catchclip);
+            audiosource.Play();
             if (state == 1) // clone ball
             {
                 Debug.Log("state is 1");
@@ -31,7 +34,7 @@ public class specialTrigger : MonoBehaviour {
                 GameObject.FindGameObjectWithTag("ball").GetComponent<ballcontrol>().special_state = state;
                 GameObject.FindGameObjectWithTag("ball").GetComponent<ballcontrol>().special_flag = true;
             }
-            Destroy(this.gameObject);
+            Destroy(this.gameObject, 0.3f);
             Debug.Log("special");
         }
     }

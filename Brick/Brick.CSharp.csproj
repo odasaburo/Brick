@@ -68,6 +68,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Brick.CSharp.Plugins.csproj">
+      <Project>{7ADDADD7-F4CD-385B-398C-7F07DE3F2AC7}</Project>
+      <Name>Brick.CSharp.Plugins</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\script\AdManager.cs" />
     <Compile Include="Assets\script\Maincontrol.cs" />
     <Compile Include="Assets\script\ballcontrol.cs" />
     <Compile Include="Assets\script\characterPurchaseControl.cs" />
@@ -79,9 +86,25 @@
     <Compile Include="Assets\script\mainspecialControl.cs" />
     <Compile Include="Assets\script\playerControl.cs" />
     <Compile Include="Assets\script\setTime.cs" />
+    <Compile Include="Assets\script\simpleADS.cs" />
     <Compile Include="Assets\script\specialPower.cs" />
     <Compile Include="Assets\script\specialTrigger.cs" />
     <Compile Include="Assets\script\specialballControl.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Plugins\Android\unityads\AndroidManifest.xml" />
+    <None Include="Assets\Plugins\Android\unityads\build.xml" />
+    <None Include="Assets\Plugins\Android\unityads\proguard-project.txt" />
+    <None Include="Assets\Plugins\Android\unityads\res\drawable\unityads_background_button_pause.xml" />
+    <None Include="Assets\Plugins\Android\unityads\res\drawable\unityads_icon_play.xml" />
+    <None Include="Assets\Plugins\Android\unityads\res\drawable\unityads_icon_speaker_base.xml" />
+    <None Include="Assets\Plugins\Android\unityads\res\drawable\unityads_icon_speaker_triangle.xml" />
+    <None Include="Assets\Plugins\Android\unityads\res\drawable\unityads_icon_speaker_waves.xml" />
+    <None Include="Assets\Plugins\Android\unityads\res\layout\unityads_button_audio_toggle.xml" />
+    <None Include="Assets\Plugins\Android\unityads\res\layout\unityads_button_pause.xml" />
+    <None Include="Assets\Plugins\Android\unityads\res\layout\unityads_view_video_paused.xml" />
+    <None Include="Assets\Plugins\Android\unityads\res\layout\unityads_view_video_play.xml" />
+    <None Include="Assets\Plugins\Android\unityads\res\values\strings.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

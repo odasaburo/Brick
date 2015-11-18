@@ -43,6 +43,10 @@ public class Maincontrol : MonoBehaviour {
     public Vector2 destroy_pos;
     public bool createspecial_flag = false;
 
+    public void Awake()
+    {
+
+    }
     // Use this for initialization
     void Start() {
         mainmenu.SetActive(true);
@@ -58,6 +62,7 @@ public class Maincontrol : MonoBehaviour {
         setPoint(game_score);
         setleveltime();
         purchaseCharacter();
+  
     }
 	
 	// Update is called once per frame
