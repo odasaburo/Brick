@@ -90,6 +90,7 @@
     <Compile Include="Assets\script\specialPower.cs" />
     <Compile Include="Assets\script\specialTrigger.cs" />
     <Compile Include="Assets\script\specialballControl.cs" />
+    <Compile Include="Assets\script\wallsetPos.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Plugins\Android\unityads\AndroidManifest.xml" />

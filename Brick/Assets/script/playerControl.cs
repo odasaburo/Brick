@@ -14,6 +14,9 @@ public class playerControl : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         pos = GetComponent<Transform>().position;
+        GetComponent<CircleCollider2D>().radius = Screen.width / 10;
+        GetComponent<CircleCollider2D>().offset = new Vector2(0, -Screen.width / 20);
+        GetComponent<RectTransform>().sizeDelta = new Vector2(Screen.width / 5, Screen.width * 0.8f / 5);
     }
 	
 	// Update is called once per frame
@@ -55,9 +58,9 @@ public class playerControl : MonoBehaviour {
 
     }
 
-    public void setposition(float x)
+    public void setposition(float x, float y)
     {
-        GetComponent<Transform>().position = new Vector2(x, GetComponent<Transform>().position.y);
+        GetComponent<Transform>().position = new Vector2(x, y);
     }
     public void setimage(int number)
     {

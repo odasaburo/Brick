@@ -62,7 +62,6 @@ public class ballcontrol : MonoBehaviour {
                 special_flag = false;
                 snow_flag = false;
                 special_state = 6;
-                Debug.Log("statestatetastasetsetset");
             }
 
             switch (special_state)
@@ -81,6 +80,7 @@ public class ballcontrol : MonoBehaviour {
                     GetComponent<Image>().sprite = snowBall;
                     circlecollider.radius = Screen.width / 5;
                     GetComponent<RectTransform>().sizeDelta = new Vector2(Screen.width / 10, Screen.width / 10);
+                    GetComponent<AudioSource>().Play();
                     limit = 9999;
                     //special_state = 6;
                     break;
@@ -125,4 +125,6 @@ public class ballcontrol : MonoBehaviour {
     {
         rigibody.velocity = new Vector2(rigibody.velocity.x * 0.5f, rigibody.velocity.y * 0.5f);
     }
+
+
 }

@@ -31,8 +31,10 @@ public class AdManager : MonoBehaviour {
         switch (result)
         {
             case ShowResult.Finished:
+                Debug.Log("finished");
                 break;
             case ShowResult.Skipped:
+                Debug.Log("skipped");
                 break;
         }
     }

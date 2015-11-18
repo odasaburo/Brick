@@ -37,10 +37,8 @@ public class cloudcontrol : MonoBehaviour {
 
             if (other.tag == "ball")
             {
-                Debug.Log("dklfjasoighaoihaos");
-                if (other.gameObject.GetComponent<ballcontrol>().special_state == 2)
+                 if (other.gameObject.GetComponent<ballcontrol>().special_state == 2)
                 {
-                    Debug.Log("12345134423563456");
                     other.gameObject.GetComponent<ballcontrol>().snow_flag = true;
                 }
             }

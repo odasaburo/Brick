@@ -24,6 +24,8 @@ public class Maincontrol : MonoBehaviour {
     public GameObject sun;
     public GameObject player;
 
+    public AudioClip audioclip;
+    public AudioSource audiosource;
     GameObject clone_ball;
     GameObject clone_player;
     GameObject clone_sun;
@@ -49,6 +51,7 @@ public class Maincontrol : MonoBehaviour {
     }
     // Use this for initialization
     void Start() {
+        audiosource = GetComponent<AudioSource>();
         mainmenu.SetActive(true);
         created_count = 0;
         destroy_count = 0;
@@ -96,7 +99,6 @@ public class Maincontrol : MonoBehaviour {
                     {
                         if (createspecial_flag)
                         {
-                            Debug.Log(destroy_pos);
                             int spec = Random.Range(0, 6);
                            
                             GetComponent<specialPower>().createSpecial(destroy_pos, spec);
@@ -114,6 +116,7 @@ public class Maincontrol : MonoBehaviour {
                     destroy_count = 0;
                     gamestart_flag = false;
                     Debug.Log("Game Win");
+                    audiosource.PlayOneShot(audioclip);
                     levelrecodedTime[gameLevel - 1] = (int)leveltime;
                     saveData();
                 }
@@ -689,7 +692,7 @@ public class Maincontrol : MonoBehaviour {
         clone_ball.GetComponentInChildren<ballcontrol>().setPosition(Screen.width /2, Screen.height * 0.15f);
 
         clone_player = Instantiate(player);
-        clone_player.GetComponentInChildren<playerControl>().setposition(Screen.width / 2);
+        clone_player.GetComponentInChildren<playerControl>().setposition(Screen.width / 2, Screen.height * 0.15f - Screen.width * 2/25);
 
         gameState = 3;
 
