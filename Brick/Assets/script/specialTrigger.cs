@@ -6,10 +6,13 @@ public class specialTrigger : MonoBehaviour {
     public AudioSource audiosource;
     public AudioClip catchclip;
     public int state;
-	// Use this for initialization
-	void Start () {
-	
-	}
+    public CircleCollider2D circlecollider;
+    // Use this for initialization
+    void Start () {
+        circlecollider = GetComponent<CircleCollider2D>();
+        GetComponent<RectTransform>().sizeDelta = new Vector2(Screen.width / 20, Screen.width / 20);
+        circlecollider.radius = Screen.width / 40;
+    }
 	
 	// Update is called once per frame
 	void Update () {

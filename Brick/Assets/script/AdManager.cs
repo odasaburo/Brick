@@ -26,7 +26,7 @@ public class AdManager : MonoBehaviour {
         }
     }
 
-    void AdCallbackHandler(ShowResult result)
+   /* void AdCallbackHandler(ShowResult result)
     {
         switch (result)
         {
@@ -37,7 +37,7 @@ public class AdManager : MonoBehaviour {
                 Debug.Log("skipped");
                 break;
         }
-    }
+    }*/
 
     IEnumerator WaitForAd()
     {
